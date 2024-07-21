@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Base define  -->
+ <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />           
+        <put-attribute name="side" value="/WEB-INF/basefragments/_side.jsp" /> 
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+ </definition> 
+ 
+    
+ <!-- Welcome Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition>
+ <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>
+ <!-- User Register Page  -->
+    <definition name="userRegister" extends="base.definition">  
+        <put-attribute name="title" value="User Register" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userregister.jsp" />  
+    </definition>
+ <!-- Add Account Type Page  -->
+    <definition name="accountType" extends="base.definition">  
+        <put-attribute name="title" value="Account Type" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_accounttype.jsp" />  
+    </definition>
+    <!-- Account Type List Page  -->
+    <definition name="accountTypeList" extends="base.definition">  
+        <put-attribute name="title" value="Account Type List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_accounttypelist.jsp" />  
+    </definition> 
+     <!-- Account Page  -->
+    <definition name="account" extends="base.definition">  
+        <put-attribute name="title" value="Account" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_account.jsp" />  
+    </definition>
+    
+    <!-- Account List Page  -->
+    <definition name="accountList" extends="base.definition">  
+        <put-attribute name="title" value="Account List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_accountlist.jsp" />  
+    </definition>
+    <!-- Deposit Page  -->
+    <definition name="deposit" extends="base.definition">  
+        <put-attribute name="title" value="Deposit" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_deposit.jsp" />  
+    </definition> 
+    <!-- Transfer Page  -->
+    <definition name="transfer" extends="base.definition">  
+        <put-attribute name="title" value="Transfer" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_transfer.jsp" />  
+    </definition>
+    <!-- Withdraw Page  -->
+    <definition name="withdraw" extends="base.definition">  
+        <put-attribute name="title" value="Withdraw" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_withdraw.jsp" />  
+    </definition>
+    <!-- Credit card Page  -->
+    <definition name="creditcard" extends="base.definition">  
+        <put-attribute name="title" value="Credit Card" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_creditcard.jsp" />  
+    </definition>
+    <!-- Credit card list Page  -->
+    <definition name="creditCardList" extends="base.definition">  
+        <put-attribute name="title" value="Credit Card List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_creditcardlist.jsp" />  
+    </definition> 
+    <!-- Credit card Payment  -->
+    <definition name="creditCardPayment" extends="base.definition">  
+        <put-attribute name="title" value="Credit Card Pay" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_creditcardpayment.jsp" />  
+    </definition> 
+    <!-- Loan Page  -->
+    <definition name="loan" extends="base.definition">  
+        <put-attribute name="title" value="Loan" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_loan.jsp" />  
+    </definition> 
+    <!-- Loan List Page  -->
+    <definition name="loanList" extends="base.definition">  
+        <put-attribute name="title" value="Loan List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_loanlist.jsp" />  
+    </definition>
+    <!-- User Loan List Page  -->
+    <definition name="userloanList" extends="base.definition">  
+        <put-attribute name="title" value="User Loan List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userloanlist.jsp" />  
+    </definition> 
+    <!-- Pay Loan List Page  -->
+    <definition name="payloan" extends="base.definition">  
+        <put-attribute name="title" value="User Pay Loan" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_payloan.jsp" />  
+    </definition>  
+  </tiles-definitions>  
